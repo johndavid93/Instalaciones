@@ -1,0 +1,13 @@
+PASOS DE INSTALACIÓN
+ 1- Ir a la siguiente dirección de correo https://www.atlassian.com/software/jira/update
+ 2 selleccionar versión y sistema operativo 
+ 3 comando utilies para linux 
+      #chmod +x atlassian-jira-software-7.3.0-x64.bin   (ejemplo)
+      #./atlassian-jira-software-7.3.0-x64.bin  (ejemplo)
+ Después de la instalación exitosa de Jira, se muestra la URL de inicio de sesión y úsela para iniciar sesión
+
+http: // server-ip: 8080
+o
+http: // server-hostname: 8080
+
+estos puertos son los que toma JIRA por defecto se pueden especificar dichos puertos en la instalación.
