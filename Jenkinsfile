@@ -1,6 +1,6 @@
 
 node {
-  unclassified:
+ /*/  unclassified:
   jiraStepsConfig:
     sites:
       name: 'jira'
@@ -10,6 +10,7 @@ node {
       loginType: 'BASIC'
       userName: 'jhon.bejarano'
       password: 'krathos26'
+      /*/
     
   stage('JIRA') {
    /*/ def testIssue = [fields: [ // id or key must present for project.
