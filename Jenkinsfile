@@ -28,11 +28,11 @@ node {
     /*/
     
     def issue = [fields: [ project: [key: 'PRUEB'],
-                           [ // id or key must present for project.
+                           // id or key must present for project.
                                project: [id: '10100'],
                        summary: 'New JIRA Created from Jenkins.',
                        description: 'New JIRA Created from Jenkins.',
-                       issuetype: [name: 'Task']]]
+                            issuetype: [name: 'Task']]]
 /*/ def newIssue = jiraNewIssue issue: issue, site: 'jira'
 echo newIssue.data.key /*/
   }
