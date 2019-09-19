@@ -32,7 +32,7 @@ node {
                        summary: 'New JIRA Created from Jenkins.',
                        description: 'New JIRA Created from Jenkins.',
                        issuetype: [name: 'Task']]]
-def newIssue = jiraNewIssue issue: issue, site: 'http://192.168.200.52:8085'
+def newIssue = jiraNewIssue issue: issue, site: 'jira'
 echo newIssue.data.key
   }
 }
