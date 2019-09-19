@@ -27,14 +27,14 @@ node {
     echo response.data.toString()
     /*/
     
-    def issue = [fields: [ project: [key: 'PRUEB'],
+    def testIssue = [fields: [ project: [key: 'PRUEB'],
                            // id or key must present for project.
                                project: [id: '10100'],
                        summary: 'New JIRA Created from Jenkins.',
                        description: 'New JIRA Created from Jenkins.',
                             issuetype: [name: 'Task']]]
    
-   response = jiraEditIssue idOrKey: 'PRUEB', issue: issue
+   response = jiraEditIssue idOrKey: 'PRUEB', issue: testIssue
         
     
 /*/ def newIssue = jiraNewIssue issue: issue, site: 'jira'
