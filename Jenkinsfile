@@ -1,4 +1,16 @@
+
 node {
+  unclassified:
+  jiraStepsConfig:
+    sites:
+    - name: 'jira'
+      url: 'http://192.168.200.52:8085'
+      timeout: 10000
+      readTimeout: 10000
+      loginType: 'BASIC'
+      userName: 'jhon.bejarano'
+      password: 'krathos26'
+    - 
   stage('JIRA') {
    /*/ def testIssue = [fields: [ // id or key must present for project.
                                project: [id: '10100'],
