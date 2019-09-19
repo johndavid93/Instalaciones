@@ -6,7 +6,7 @@ node {
                                description: 'New JIRA Created from Jenkins.',
                                customfield_1000: 'customValue',
                                // id or name must present for issuetype.
-                               issuetype: [id: '2']]]
+                               issuetype: [id: '3']]]
 
     response = jiraEditIssue idOrKey: 'PRUEB', issue: testIssue
 
