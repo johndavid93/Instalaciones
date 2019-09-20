@@ -21,11 +21,11 @@ node {
                                // id or name must present for issuetype.
                                issuetype: [id: '2']]]
 
-    response = jiraEditIssue idOrKey: 'PRUEB', issue: testIssue
+    response = jiraEditIssue idOrKey: 'PRUEB', issue: Done
 
     echo response.successful.toString()
     echo response.data.toString()
-    /*/
+    
     
     def issue = [fields: [ project: [key: 'PRUEB'],
                            // id or key must present for project.
